@@ -1,0 +1,23 @@
+{
+  "name": "kodilla_zad_14_5",
+  "version": "1.0.0",
+  "description": "exam zad_14_5",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "babel script.js --out-file script-compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Albert",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
