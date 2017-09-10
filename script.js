@@ -5,34 +5,33 @@ const w = ('world') ;
 console.log(`${h} ${w}`);
 
 
-
-
-const a = (5);
-const b = ('');
-const  multiply = (b = '1') => console.log(`${a} * ${b}`);
-multiply();
-
 /*zadanie 2*/
 
+const a = ('5');
+const b = ('');
+const  multiply = (b = '1') => console.log(a * b);
+multiply();
 
-const numbers = [0, ,3];
 
-const multiply2 = (numbers = (1) = '1') => consol.log (`${numbers[1] * numbers[2]}`);
 
 /*zadanie 3 */
 
-function average() {
-        var result = 0;
-        for (i = 0; i < arguments.length; i++) {
-            result = result + arguments[i];
-        }
-        var avg = result / arguments.length;
-        console.log(avg);
-    }
+const average = (...num) => num.reduce((a,b) => a+b)/ num.length;
+console.log(average(3,2,1));
 
 
-average(1); 
-average(1, 3); 
-average(1, 3, 6, 6); 
 
 
+/*zadanie 4 */
+
+
+const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
+const avarage= (((...numbers)=> numbers.reduce((sum, next) => sum + next))(...grades)) / grades.length;
+console.log(avarage);
+
+
+/*zadanie 5*/
+
+const allParm=[1, 4, 'Iwona', false, 'Nowak'];
+const [ ,b,c, ,e]=allParm;
+console.log(c,e);
